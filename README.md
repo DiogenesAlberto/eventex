@@ -28,12 +28,12 @@ python manage.py test
 5. Configure o serviço de email.
 6. Envie o código para o heroku
 
-``console
+```console
 heroku create minhainstancia
 heroku config:push
 heroku config: set SECRET_KEY='python contrib/secret_gen.py'
 heroku config: set DEBUG=False
 #configuro o email
 git push heroku master --force`
+```
 
-``
